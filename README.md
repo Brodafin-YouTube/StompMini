@@ -1,16 +1,28 @@
 # StompMini
 Stomp Mini is a DIY Percussion Pad similar to the Roland SPD ONE-Kick
 FOR CONSTRUCTION DETAILS AND MORE, GO TO YOUTUBE AT https://youtu.be/xr_I2tv7yJs
-
-This project uses an ESP-32 and the compiled code StompMini.  The code includes ten embedded hex PCM data array elements, which are played using the command:
-
+This project uses an ESP-32 and the compiled code StompMini.ino.  The code includes ten embedded hex PCM data array elements, which are played using the command:
 playAudioDAC(audioFiles[counter1], audioSizes[counter1]
-
 The hardware has a local unit with an extension right trigger pad.
-
 The hardware is powered by 5vDC using a standard phone charging block and a matching charging cable with an appropriate USB male that mates with the ESP-32.
-
 The Instruments/Sounds/Samples are selected by the rotary encoder on the Local unit.
+
+## 🧠 StompMini Sketch
+The Arduino sketch for the ESP32 is included in this repository as `StompMini.ino`.
+
+### Features:
+- Plays embedded PCM audio samples using `playAudioDAC()`
+- Selects sounds via rotary encoder
+- Supports up to 10 embedded audio files
+
+### How to Use:
+1. Open `StompMini.ino` in the Arduino IDE.
+2. Make sure your ESP32 board is set up correctly (see instructions below).
+3. Upload the sketch to your ESP32.
+4. Tap the trigger pad to play sounds!
+
+### Reprogramming Samples:
+To replace the embedded sounds, follow the steps in the README to convert `.wav` files into hex arrays and paste them into the sketch.
 
 REPROGRAMMING A SAMPLE
 
