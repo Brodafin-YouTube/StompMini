@@ -1,6 +1,6 @@
 # StompMini
 Stomp Mini is a DIY Percussion Pad similar to the Roland SPD ONE-Kick
-FOR CONSTRUCTION DETAILS AND MORE, GO TO YOUTUBE AT https://youtu.be/xr_I2tv7yJs
+FOR CONSTRUCTION DETAILS AND MORE, GO TO YOUTUBE AT https://youtu.be/8J7dI9CbztE
 This project uses an ESP-32 and the compiled code StompMini.ino.  The code includes ten embedded hex PCM data array elements, which are played using the command:
 playAudioDAC(audioFiles[counter1], audioSizes[counter1]
 The hardware has a local unit with an extension right trigger pad.
